@@ -23,7 +23,13 @@ with st.sidebar:
     
     model_choice = st.selectbox(
         "选择模型",
-        ["bert-base-uncased", "bert-base-cased"]
+        [
+            "bert-base-uncased",
+            "bert-base-cased",
+            "bert-base-chinese",
+            "hfl/chinese-bert-wwm-ext",
+            "distilbert-base-uncased",
+        ]
     )
     
     text_input = st.text_area(
